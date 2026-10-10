@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cyan">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nouman — Software Engineer</title>
+<meta name="description" content="Portfolio of Nouman, software engineer.">
+<meta name="theme-color" content="#02030a">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Manrope:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script>try{var t=localStorage.getItem('nouman.theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<noscript><style>.reveal,.char{opacity:1!important;transform:none!important;filter:none!important}#boot{display:none!important}body.lock{overflow:auto!important}</style></noscript>
+</head>
+<body class="lock">
+
+<!-- Boot sequence -->
+<div id="boot" aria-hidden="true">
+  <div class="boot-half top"></div><div class="boot-half bot"></div>
+  <div class="boot-flash"></div>
+  <div class="boot-core">
+    <pre id="bootlog"></pre>
+    <div class="boot-bar"><i id="bbar"></i></div>
+    <div class="boot-pct"><b id="bpct">0</b>%</div>
+  </div>
+</div>
+
+<!-- Page transition -->
+<div id="wipe" aria-hidden="true"><div class="w-line"></div><span id="wipeT"></span><small>// loading section</small></div>
+
+<div id="progress" aria-hidden="true"></div>
+<div id="ring" aria-hidden="true"></div>
+<div class="bg" aria-hidden="true"><i class="aur a1"></i><i class="aur a2"></i><i class="grid"></i><i class="scan"></i></div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#home" data-nav aria-label="Home"><span class="logo-mark"></span><b id="brandName">Nouman</b></a>
+  <nav class="links" id="navLinks" aria-label="Main"></nav>
+  <div class="nav-actions">
+    <div class="themes" role="group" aria-label="Colour theme">
+      <button data-theme-btn="cyan" aria-label="Cyan theme"></button>
+      <button data-theme-btn="emerald" aria-label="Emerald theme"></button>
+      <button data-theme-btn="crimson" aria-label="Crimson theme"></button>
+    </div>
+    <a class="btn btn-sm" href="#contact" data-nav data-magnetic>Get in touch</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><i></i><i></i></button>
+  </div>
+</header>
+<div class="menu" id="menu"></div>
+
+<main>
+  <section class="hero" id="home" data-title="Home"></section>
+  <div class="marquee" id="marquee" aria-hidden="true"></div>
+  <section id="about" data-title="About"></section>
+  <section id="showcase" data-title="Skills"></section>
+  <section id="projects" data-title="Projects"></section>
+  <section id="experience" data-title="Journey"></section>
+  <section id="reviews" data-title="Reviews"></section>
+  <section id="faq" data-title="FAQ"></section>
+  <section id="contact" data-title="Contact"></section>
+</main>
+<footer class="foot" id="foot"></footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/content.js"></script>
+<script src="js/main.js"></script>
+<script src="js/editor.js"></script>
+</body>
+</html>
